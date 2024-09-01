@@ -14,20 +14,29 @@ public class TestFactorizer {
     factorizer = new Factorizer();
   }
 
+
   // Replace the following example tests with your own tests
   // of the prime factorization function.
-  @Test
-  public void testZero() {
-    assertEquals(2, factorizer.exampleMethod(0));
-  }
 
   @Test
-  public void testOne() {
-    assertEquals(2, factorizer.exampleMethod(1));
+  public void testFactorize12() {
+
+    assertEquals("223", Factorizer.factorize(12));
+  }
+  @Test
+  public void testFactorize69() {
+
+    assertEquals("323", Factorizer.factorize(69));
+  }
+  @Test
+  public void testFactorize0() {
+
+    assertEquals("null", Factorizer.factorize(0));
+  }
+  @Test
+  public void testFactorizenegative() {
+
+    assertEquals("null", Factorizer.factorize(-22));
   }
 
-  @Test
-  public void testTen() {
-    assertEquals(1, factorizer.exampleMethod(10));
-  }
 }
